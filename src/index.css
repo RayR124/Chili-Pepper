@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    overflow: hidden;
+    background-color: #fff;
+    padding: 20px 150px;
+    height: auto;
+    width: auto;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.facebook-link {
+  display: inline-block;
+}
+
+.facebook-link img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: #010101;
+  border: none;
+  color: white;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #464646;
+}
+
+.menu-image {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.menu-images {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-images img {
+  width: 100%;
+  max-width: 1250px;;
+  margin-top: 20px;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.time {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.facebook-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0rem;
+}
