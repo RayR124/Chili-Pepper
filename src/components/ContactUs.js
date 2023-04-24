@@ -1,20 +1,19 @@
-import React from 'react';
+import React from "react";
+import ContactForm from "./ContactForm";
 
-const ContactUs = () => {
-  return (
-    <div>
-      <h1>Contact Us</h1>
-      <form>
-        <label>Name:</label>
-        <input type="text" />
-        <label>Email:</label>
-        <input type="email" />
-        <label>Message:</label>
-        <textarea></textarea>
-        <button>Submit</button>
-      </form>
-    </div>
-  );
-};
+const contactUs = () => {
 
-export default ContactUs;
+    return (
+        <div className="contactUs" style={{ marginLeft: 360, marginRight: 25 }}>
+            <h1 style={{ color: "gray", fontSize: 45, marginBottom: 15, textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000" }}>
+                Contact Us:
+            </h1>
+            <div className="form">
+                <ContactForm />
+            </div>
+        </div>
+
+    );
+}
+
+export default contactUs;
