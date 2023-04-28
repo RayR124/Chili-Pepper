@@ -52,7 +52,6 @@ function ReviewSystem() {
             <option value="1">1 star</option>
           </select>
         </div>
-
         <div className="form-group">
           <label htmlFor="comment">Comment:</label>
           <textarea
@@ -66,8 +65,6 @@ function ReviewSystem() {
         <button type="submit">Submit</button>
       </div>
       </form>
-
-
       <div className="reviews-list">
         <h2>Recent Reviews:</h2>
         {reviews.map(review => (
