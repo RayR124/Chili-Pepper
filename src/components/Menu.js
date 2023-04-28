@@ -23,7 +23,7 @@ const Menu = () => {
                 <button onClick={showLunchDinner}>Lunch/Dinner</button>
                 <button onClick={showOnRequest}>On Request</button>
             </div>
-            <div className="menu-images" style={{ textAlign: 'center' }}>
+            <div className="menu-images" style={{ textAlign: 'center', opacity: .9 }}>
                 {menuType === 'breakfast' && (
                     <img src="breakfast.webp" alt="breakfast" />
                 )}

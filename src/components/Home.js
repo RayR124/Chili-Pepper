@@ -3,7 +3,7 @@ import React from 'react';
 function Home() {
     return (
         <div className="home-container">
-            <img src="/wagon.png" alt="wagon"/>
+            <img src="/wagon.png" alt="wagon" style={{ opacity:.9 }}/>
             <h1 className="title">Welcome to the Chili Pepper Cook Shack</h1>
             <h2 className="subtitle">A Mexican-American dining experience available to all who visit the <a href='https://butleramusements.com/' target=' _blank'>Butler Amusements</a> Fair.</h2>
             <h3 className="time">Breakfast served every day from 8:00am to 11:00am</h3>

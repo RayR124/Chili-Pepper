@@ -1,14 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import Home from './components/Home.js';
 import Menu from './components/Menu';
 import Schedule from './components/Schedule';
 import Reviews from './components/Reviews';
 import ContactUs from './components/ContactUs';
+import ReviewList from './ReviewList';
 import './App.css';
 import './background.css';
 
 function App() {
+  const [reviews, setReviews] = useState([]);
   const [homeVisible, setHomeVisible] = useState(true);
   const [menuVisible, setMenuVisible] = useState(false);
   const [scheduleVisible, setScheduleVisible] = useState(false);
@@ -55,6 +57,15 @@ function App() {
     setContactUsVisible(true);
   }
 
+  useEffect(() => {
+    async function fetchReviews() {
+      const response = await fetch('/api/reviews');
+      const data = await response.json();
+      setReviews(data);
+    }
+    fetchReviews();
+  }, []);
+
   return (
     <div className="background">
       <div className="vegetable-container">
@@ -76,7 +87,8 @@ function App() {
           <Schedule />
         </div>
         <div className={`reviews ${reviewsVisible ? "" : "hidden"}`}>
-          <Reviews />
+           <Reviews />
+           <ReviewList reviews={reviews} />
         </div>
         <div className={`contactUs ${contactUsVisible ? "" : "hidden"}`}>
           <ContactUs />

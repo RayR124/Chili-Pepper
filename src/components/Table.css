@@ -1,0 +1,39 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .location {
+
+  }
+  
+  th,
+  td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+  }
+  
+  th.location {
+    background-color: rgb(113, 1, 1, .6); 
+    color: #000000;
+  }
+  
+  td.location-cell.red-bg {
+    background-color: #f00;
+    color: #fff;
+    opacity: .5;
+  }
+  
+  th.start-date,
+  th.end-date {
+    background-color: rgb(0, 113, 0, .6);
+    color: #000000;
+  }
+  
+  td.start-date-cell.green-bg,
+  td.end-date-cell.green-bg {
+    background-color: #0f0;
+    color: #fff;
+    opacity: .5;
+  }
