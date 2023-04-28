@@ -3,7 +3,7 @@ import React from 'react';
 function ReviewList({ reviews }) {
   return (
     <div>
-      <h2>Reviews Functionality Coming Soon!</h2>
+      <h2 style={{ textAlign:'center' }}>Reviews Functionality Coming Soon!</h2>
       <ul>
         {reviews.map((review) => (
           <li key={review.id}>
